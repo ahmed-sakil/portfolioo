@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: "Quantico", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* | VARIABLES | */
+:root{
+    --my-green : rgb(110, 255, 110);
+}
+
+
+.nav{
+    background-color: rgb(10, 110, 72);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px white;
+}
+
+.logo{
+    width: 80px;
+    margin-left: 1%;
+}
+
+.logo a img{
+    width: 100%;
+    height: auto;
+}
+
+.nav_menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3%;
+}
+
+.nav_menu a{
+    font-size: 1.2rem;
+    color: aliceblue;
+    font-weight: 510;
+    transition: transform 0.3s ease;
+}
+
+.nav_menu a:hover{
+    transform: scale(2);
+    text-shadow: 0 0 10px black;
+}
+
+#hero{
+    transition: all .5s ease;
+}
+
+.hero{
+    height: 100vh;
+    /* background: url(/img/hero2.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat; */
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    padding: 20vh 5vw 0 5vw;
+}
+
+.hero_hi{
+    background-color: rgba(59, 61, 62, 0.795);
+    width: fit-content;
+    font-size: 2rem;
+    padding: .7vw;
+    border-radius: 10px;
+    color: cyan;
+}
+
+.Sakil{
+    color: cyan;
+    font-weight: 600;
+}
+
+.hero_quote_container{
+    display: flex;
+    align-items:flex-start;
+}
+.hero_quote h1{
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 900;
+    line-height: 1;
+    margin: 1rem 0;
+    width: 50vw;
+}
+.hero_quote h1, p{
+    color: aliceblue;
+}
+
+.green{
+    color: rgb(110, 255, 110);
+}
+
+.hero_quote p{
+    width: 40vw;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+/* .hero_sakil{
+    position: absolute;
+    right: 10vw;
+    bottom: 1px;
+    width: 13%;
+    transition: transform 0.8s ease;
+}
+
+.hero_sakil:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.hero_sakil img{
+    filter: drop-shadow(0 0 2px cyan);
+    width: 100%;
+} */
+
+/* | SKILLS | */
+
+#skills{
+    height: 100vh;
+    background: linear-gradient(#333,rgb(33, 71, 108));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+.skills_h{
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--my-green);
+}
+
+.skills_container{
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    background-color: #0a702a;
+    border-radius: 10px;
+    padding: 1%;
+
+}
+
+.card{
+    width: 23%;
+    display: flex;
+    align-items: center;
+    background-color: #021207ed;
+    margin: 1%;
+    /* font-size: 1.1rem; */
+    border-radius: 10px;
+    padding: 0.5vw;
+}
+
+.card:hover{
+    cursor: pointer;
+    background-color: #021207 ;
+}
+.card i, .card span{
+    margin: 1vw;
+    color: cyan;
+    font-size: 1.5rem;
+}
+.material-symbols-outlined{
+    font-size: 2.5rem!important;
+}
+
+
+/* | MEDIA | */
+
+
+@media screen and (max-width:1150px){
+    
+.nav_menu{
+    width: 60%;
+}
+.hero_quote h1{
+    width: 60vw;
+}
+.hero_quote p{
+    width: 70vw;
+}
+
+}
+@media screen and (max-width:500px){
+   
+.hero_quote h1{
+    width: 70vw;
+}
+
+.hero_quote p{
+    width: 80vw;
+}
+
+}
+
+@media screen and (max-width:700px){
+    
+.nav_menu a{
+    font-size: 1rem;
+}
+
+}
